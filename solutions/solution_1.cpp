@@ -5,6 +5,8 @@ using namespace std;
  int main () {
   int n;
  cout<< "please enter the number n : ";
+
+ cout<< "please enter the number n : ";
   cin >> n;
   int i = 0;
    while(i < n){
@@ -17,4 +19,3 @@ using namespace std;
     i++;
   }
 }
-//this is working 
