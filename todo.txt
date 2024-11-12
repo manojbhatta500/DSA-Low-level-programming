@@ -1,3 +1,1 @@
-1. add prime number to the arry
-2. learn about vector
-
+complete the basics of c++
