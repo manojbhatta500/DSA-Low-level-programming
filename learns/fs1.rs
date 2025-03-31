@@ -14,6 +14,9 @@ pub fn create_d(){
 }
 
 
+// learning complex task 
+
+
 pub fn create_f(){
     let file_name = "./images/try.txt";
     let  file_result = std::fs::File::create_new(file_name);
