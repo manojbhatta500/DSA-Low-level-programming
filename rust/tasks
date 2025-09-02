@@ -1,0 +1,43 @@
+# Rust Mini Programs Roadmap
+
+## Level 1: Very Easy – Basics & Input/Output
+1. Sum of Two Numbers – Ask for two numbers, print the sum.
+2. Multiply Two Numbers – Ask for two numbers, print the product.
+3. Even or Odd – Check if a number is even or odd.
+4. Simple Greeting – Ask for the user’s name and greet them.
+5. Rectangle Area – Input width & height, calculate area.
+
+## Level 2: Easy – Loops & Functions
+6. Sum of N Numbers – Ask how many numbers, read them, calculate sum.
+7. Factorial – Compute factorial using a function.
+8. Reverse a String – Input a string, reverse it using a function.
+9. Multiplication Table – Print the multiplication table for a given number.
+10. Number Patterns – Print patterns like triangles or squares with loops.
+
+## Level 3: Medium – Collections & Conditional Logic
+11. Find Maximum / Minimum – Input multiple numbers, print largest and smallest.
+12. Simple Calculator – Two numbers + operator (+, -, *, /) → compute result.
+13. Fibonacci Sequence – Print first N Fibonacci numbers using a function.
+14. Prime Checker – Check if a number is prime using a function.
+15. Sum of Even / Odd Numbers – Input N numbers, calculate sum of evens and odds separately.
+
+## Level 4: Medium → Hard – Vectors & Loops
+16. Dynamic To-Do List – Add, remove, view tasks stored in a vector.
+17. Average Calculator – Input N numbers, calculate average, min, max using vectors.
+18. Number Sorting – Input N numbers, sort and display ascending/descending.
+19. Count Characters / Words – Input a sentence, count letters, vowels, and words.
+20. Menu-driven Program – Let user choose actions (sum, multiply, factorial, etc.) repeatedly until quit.
+
+## Level 5: Hard – Structs, Enums, & Randomness
+21. Simple Bank System – Use structs for accounts: deposit, withdraw, check balance.
+22. Rock-Paper-Scissors Game – Play against computer using enums and random choice.
+23. Number Guessing Game – Random number, user guesses, give hints if too high/low.
+24. Quiz Game – Ask multiple-choice questions, track score using structs.
+25. Temperature Converter – Convert Celsius ↔ Fahrenheit, repeat until user quits.
+
+## Level 6: Very Hard – File Handling & Modularization
+26. Save Calculation History – Store all sums or calculations in a file, read later.
+27. Load To-Do List from File – Save tasks to file, reload when program starts.
+28. High Score Tracker – Track game scores, save top scores to file.
+29. User Profile Manager – Create, edit, view user profiles using structs and files.
+30. Mini Banking System with Menu & Files – Persistent data: balances stored in file, load/save automatically.
