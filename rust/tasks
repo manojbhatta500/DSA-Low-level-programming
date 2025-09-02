@@ -1,0 +1,352 @@
+=========================
+   RUST ROADMAP (10 Stages)
+   Focus: CLI Tooling + Backend APIs
+=========================
+
+Stage 1 – Basics & I/O
+-------------------------
+📚 Topics:
+- Variables, mut, shadowing
+- Functions
+- Basic I/O with stdin/stdout
+- Conditionals & loops
+
+🔹 10 Mini-Programs:
+1. Simple calculator (addition, subtraction, multiplication, division)
+2. Read a number and check positive/negative
+3. Print multiplication table
+4. Print all even numbers up to N
+5. Sum of digits of a number
+6. Palindrome number check
+7. Count characters in a string
+8. Print prime numbers up to N
+9. GCD of two numbers
+10. LCM of two numbers
+
+🔸 5 Mini-Projects:
+1. Temperature Converter CLI (Celsius <-> Fahrenheit <-> Kelvin)
+2. Unit Converter CLI (meters/feet, kg/pounds, etc.)
+3. Number Guessing Game
+4. Basic Math Quiz Game
+5. Simple Interest Calculator CLI
+
+🚀 Mega Project:
+- CLI Calculator Suite (interactive, supports multiple operations, history tracking, error handling)
+
+
+Stage 2 – Collections & Structs
+-------------------------
+📚 Topics:
+- Vec<T>, iteration, push/pop
+- HashMap basics
+- Structs with methods
+- Ownership with collections
+
+🔹 10 Mini-Programs:
+1. Average of numbers in a vector
+2. 2nd largest number in a vector
+3. Remove duplicates from vector
+4. Word frequency counter with HashMap
+5. Simple contact book (HashMap)
+6. Struct Book (title, author, year), print all
+7. Struct Person with method is_adult()
+8. Merge two vectors
+9. Count vowels in a string using HashMap
+10. Intersection of two vectors
+
+🔸 5 Mini-Projects:
+1. Student Grade System (names + marks -> grades)
+2. Inventory Manager (HashMap add/remove/search)
+3. To-Do List CLI (add, remove, list)
+4. Library Manager (search by author/title)
+5. Voting System (HashMap to count votes)
+
+🚀 Mega Project:
+- CLI Expense Tracker (store expenses in JSON, view by category, total balance)
+
+
+Stage 3 – Ownership, Borrowing & Lifetimes
+-------------------------
+📚 Topics:
+- Ownership rules
+- Borrowing & mut references
+- Slices (&[T])
+- Lifetimes basics
+
+🔹 10 Mini-Programs:
+1. Word counter with &str
+2. Longest of two string slices
+3. Modify vector via &mut Vec
+4. Reverse slice in place
+5. Borrow checker demo
+6. Pass struct by ref vs by value
+7. Find median of slice
+8. Implement custom trim with &str
+9. Manual string splitter
+10. Dangling ref demo
+
+🔸 5 Mini-Projects:
+1. String Utilities Library (reverse, trim, split)
+2. Safe Calculator (borrows numbers instead of moving)
+3. Word Analyzer CLI (borrow strings, count unique words)
+4. Playlist Manager (search songs by ref)
+5. Bank Account Struct (deposit/withdraw safely)
+
+🚀 Mega Project:
+- CLI Notes App (store, edit, search notes safely with borrowing rules)
+
+
+Stage 4 – Pattern Matching & Error Handling
+-------------------------
+📚 Topics:
+- match keyword
+- Option<T>, Result<T, E>
+- ? operator
+- Custom error enums
+
+🔹 10 Mini-Programs:
+1. Match days of week
+2. Option safe get from vector
+3. Parse int with Result
+4. Safe division (handle divide by zero)
+5. File open with Result
+6. Convert string to number safely
+7. Match multiple patterns
+8. Match ranges
+9. Match tuple quadrants
+10. Error handling factorial
+
+🔸 5 Mini-Projects:
+1. File Reader CLI (handle missing files)
+2. Safe Math CLI
+3. Config Parser (key=value with errors)
+4. Guess the Number Game (with error handling)
+5. ATM Simulation (error if withdraw > balance)
+
+🚀 Mega Project:
+- CLI File Explorer (navigate directories, list files, safe error handling)
+
+
+Stage 5 – Traits & Generics
+-------------------------
+📚 Topics:
+- Traits & impl
+- Trait bounds
+- Generics with structs/functions
+- Derive traits (Debug, Clone, Eq, PartialEq)
+
+🔹 10 Mini-Programs:
+1. Trait Shape with area()
+2. Implement trait Printable for multiple structs
+3. Generic max<T> function
+4. Generic swap<T>
+5. Implement Clone for struct
+6. Compare two structs with PartialEq
+7. Implement trait Display for struct
+8. Vec<T> with generic type function
+9. Create trait Resizable (resize for Circle, Rectangle)
+10. Trait inheritance (trait A: B)
+
+🔸 10 Mini-Projects:
+1. Geometry Library (Circle, Rectangle with traits)
+2. Generic Sorting Library
+3. Generic Stack<T>
+4. Logger Trait (console, file)
+5. E-commerce Cart CLI with traits
+6. Banking System with generic Account
+7. Quiz Game using traits
+8. Mini Serialization Trait (to_json)
+9. Plugin System with traits
+10. Text Formatter (trait for upper/lower/title case)
+
+🚀 Mega Project:
+- CLI Password Manager (store passwords securely, traits for storage backends)
+
+
+Stage 6 – File I/O & Serialization
+-------------------------
+📚 Topics:
+- Reading/writing files
+- JSON & TOML serialization with serde
+- Struct persistence
+
+🔹 10 Mini-Programs:
+1. Write to file
+2. Read file
+3. Append file
+4. Count lines in file
+5. Save struct to JSON
+6. Load struct from JSON
+7. Parse config file
+8. Save Vec<i32> to file
+9. Read CSV file
+10. Delete file safely
+
+🔸 10 Mini-Projects:
+1. Logger CLI (append logs to file)
+2. Address Book CLI (save/load JSON)
+3. To-Do CLI (save/load tasks in JSON)
+4. Expense Tracker (persistent JSON)
+5. Config Loader
+6. CLI Notes App with JSON persistence
+7. Contact Manager with file save
+8. Mini DB with HashMap -> JSON
+9. CLI Text Searcher
+10. File Merger
+
+🚀 Mega Project:
+- CLI Personal Journal (add/edit/search entries, auto-save in JSON)
+
+
+Stage 7 – Concurrency & Multithreading
+-------------------------
+📚 Topics:
+- Threads
+- Channels
+- Arc/Mutex
+- Shared state
+
+🔹 10 Mini-Programs:
+1. Spawn threads printing numbers
+2. Shared counter with Arc<Mutex>
+3. Producer-consumer with channel
+4. Parallel sum of array
+5. Thread pool basic
+6. Ping-pong message with channel
+7. Read file in parallel
+8. Thread-safe logger
+9. Mutex-protected bank account
+10. Race condition demo
+
+🔸 10 Mini-Projects:
+1. Multithreaded File Downloader
+2. Concurrent Prime Finder
+3. Parallel Matrix Multiplication
+4. Chat Server (threads + channels)
+5. Thread Pool Implementation
+6. Concurrent Web Scraper
+7. Background Logger
+8. Mini Parallel Word Counter
+9. Concurrency Benchmark Tool
+10. Parallel CLI Sorting
+
+🚀 Mega Project:
+- Multithreaded CLI Chat App (server + multiple clients)
+
+
+Stage 8 – Networking & Async
+-------------------------
+📚 Topics:
+- TCP/UDP sockets
+- Async Rust (tokio)
+- HTTP basics
+
+🔹 10 Mini-Programs:
+1. TCP echo server
+2. TCP echo client
+3. UDP server
+4. UDP client
+5. Simple async timer
+6. HTTP GET request
+7. HTTP POST request
+8. Mini API consumer
+9. Ping server
+10. Simple async file reader
+
+🔸 10 Mini-Projects:
+1. Async TCP Chat Server
+2. File Transfer Server
+3. HTTP JSON Fetcher
+4. Weather API Client
+5. Port Scanner CLI
+6. Async Downloader
+7. CLI Mail Sender
+8. Mini Proxy Server
+9. Async Log Collector
+10. URL Shortener (CLI)
+
+🚀 Mega Project:
+- CLI Networking Toolkit (port scanner, downloader, simple chat in one tool)
+
+
+Stage 9 – Web Servers & REST APIs
+-------------------------
+📚 Topics:
+- Actix-Web / Axum basics
+- Routing
+- JSON APIs
+- Middleware
+- SQLite/Postgres integration
+
+🔹 10 Mini-Programs:
+1. Hello World Web Server
+2. GET /hello endpoint
+3. POST /echo endpoint
+4. Simple CRUD with Vec
+5. JSON response
+6. Path params
+7. Query params
+8. Middleware logger
+9. Error handling API
+10. Unit test for API
+
+🔸 10 Mini-Projects:
+1. Blog API (CRUD posts)
+2. Todo API
+3. Notes API with SQLite
+4. Expense Tracker API
+5. Authentication API (JWT)
+6. Contact Manager API
+7. URL Shortener API
+8. Weather API Proxy
+9. Bookstore API
+10. Chat API (REST only)
+
+🚀 Mega Project:
+- Full REST API (Users, Auth, Notes, Expenses) with SQLite/Postgres + Actix/Axum
+
+
+Stage 10 – Final Integration & Portfolio
+-------------------------
+📚 Topics:
+- Combining CLI + Web
+- Packaging & publishing (cargo)
+- Testing & documentation
+
+🔹 10 Mini-Programs:
+1. Unit tests
+2. Integration tests
+3. Benchmark test
+4. Cargo publish dry run
+5. CLI arg parsing with clap
+6. JSON config loader
+7. Environment variables
+8. Logging with env_logger
+9. Documentation example
+10. Build release binary
+
+🔸 10 Mini-Projects:
+1. CLI + API hybrid (client + server)
+2. Deploy API to server
+3. CLI package with clap
+4. API with persistent DB
+5. Mini Fullstack Rust (API + CLI client)
+6. Configurable CLI tool
+7. REST API with JWT Auth
+8. API rate limiter middleware
+9. Backup & Restore CLI
+10. CLI JSON Validator
+
+🚀 Mega Project:
+- Final Portfolio Project: "Rust Productivity Suite"
+  * Includes: 
+    - CLI Expense Tracker
+    - Notes Manager CLI
+    - REST API backend (users, auth, notes, expenses)
+  * Publish to GitHub with docs, tests, README
+  * This can directly be shown to clients/employers
+
+
+=========================
+END OF ROADMAP
+=========================

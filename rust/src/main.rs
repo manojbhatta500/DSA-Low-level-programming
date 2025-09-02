@@ -1,6 +1,3 @@
 fn main(){
-println!("hello world");
+    println!("scodus flutter version is 3.19.1");
 }
-
-
-
