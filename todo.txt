@@ -1,1 +1,162 @@
-complete the dsa in c++ and rust
+🚀 Rust Project Roadmap (20 Steps to Client-Ready Portfolio)
+📂 Stage 1: CLI Foundations (Projects 1–5)
+
+
+
+
+
+5. JSON Pretty-Printer CLI
+
+🎯 Take JSON input, pretty-print.
+🛠 serde_json, formatting.
+⭐ Beginner
+📚 JSON parsing/serialization.
+➕ Related: CSV converter.
+📝 Parse JSON, pretty-print formatted output.
+
+⚙️ Stage 2: Practical Utilities (Projects 6–10)
+
+Goal: Demonstrate “useful” tools, not just clones.
+
+6. Log Parser + CLI Report
+
+🎯 Parse server logs → error counts, status codes.
+🛠 File I/O, regex, stats.
+⭐ Intermediate
+📚 Log parsing, structured output.
+➕ Related: dashboard exporter.
+📝 Parse logs, extract info, count + print table.
+
+7. CSV Cleaner / Validator
+
+🎯 Fix messy CSV (missing fields, bad dates).
+🛠 csv crate, error handling.
+⭐ Intermediate
+📚 Data cleaning + validation.
+➕ Related: Excel processor.
+📝 Load CSV, validate rows, export clean CSV.
+
+8. File Change Notifier + Backup
+
+🎯 Watch directory + auto backup changes.
+🛠 notify, file ops.
+⭐ Intermediate
+📚 File watching, event-driven code.
+➕ Related: sync tools.
+📝 Watch directory, trigger backup on change.
+
+9. Text Searcher with Index
+
+🎯 Build text index for fast searching.
+🛠 tantivy crate.
+⭐ Intermediate
+📚 Full-text search basics.
+➕ Related: document search APIs.
+📝 Index documents, allow fast search queries.
+
+10. Markdown → HTML Converter
+
+🎯 Convert markdown docs to HTML.
+🛠 pulldown-cmark.
+⭐ Intermediate
+📚 Parsing + rendering.
+➕ Related: static site gen.
+📝 Parse markdown, render HTML, write file.
+
+🌐 Stage 3: Networking + APIs (Projects 11–15)
+
+Goal: Look like a backend/API capable Rust dev.
+
+11. Simple REST API (CRUD)
+
+🎯 CRUD API for tasks.
+🛠 axum/warp, serde, tokio.
+⭐ Intermediate
+📚 REST basics in Rust.
+➕ Related: full SaaS backend.
+📝 Setup server, implement CRUD endpoints.
+
+12. HTTP Request Logger Proxy
+
+🎯 Proxy traffic, log headers + bodies.
+🛠 hyper, async.
+⭐ Intermediate
+📚 Middleware + logging.
+➕ Related: API gateway.
+📝 Intercept requests, log, forward to target.
+
+13. Website Health Monitor
+
+🎯 Periodically check URLs, send alerts.
+🛠 reqwest, async tasks.
+⭐ Intermediate
+📚 Async jobs + alerts.
+➕ Related: uptime dashboards.
+📝 Periodic HTTP checks, log + alert failures.
+
+14. HTTP Load Tester (like ab)
+
+🎯 Stress test an endpoint.
+🛠 tokio, concurrency.
+⭐ Advanced
+📚 Concurrency, benchmarking.
+➕ Related: profiling tools.
+📝 Spawn workers, send requests, measure latency.
+
+15. REST API with Auth (JWT)
+
+🎯 Extend API with login, auth.
+🛠 jsonwebtoken, DB.
+⭐ Advanced
+📚 Auth flows, DB integration.
+➕ Related: SaaS boilerplate.
+📝 Secure endpoints with JWT, connect DB.
+
+🚀 Stage 4: Advanced Client-Level Projects (Projects 16–20)
+
+Goal: Demonstrate serious, contract-ready skills.
+
+16. Deployment Automation CLI
+
+🎯 Automate server deploys over SSH.
+🛠 ssh2 crate, CLI UX.
+⭐ Advanced
+📚 Remote ops, automation.
+➕ Related: CI/CD pipelines.
+📝 Connect SSH, pull repo, build, restart service.
+
+17. Log Parser + Dashboard Exporter
+
+🎯 Extend log parser → export HTML/CSV dashboard.
+🛠 csv, serde_json, HTML templating.
+⭐ Advanced
+📚 Reporting + output formats.
+➕ Related: BI tools.
+📝 Parse logs, summarize, export dashboard reports.
+
+18. File Sync Tool (Local → Remote)
+
+🎯 Sync files across machines.
+🛠 Checksums, ssh2, file I/O.
+⭐ Advanced
+📚 File sync + conflict resolution.
+➕ Related: rsync-like.
+📝 Compare hashes, transfer changed files, resolve conflicts.
+
+19. Distributed Task Queue (Mini Celery)
+
+🎯 Worker pool, job queue, results.
+🛠 tokio, channels, networking.
+⭐ Advanced
+📚 Concurrency, task distribution.
+➕ Related: workflow engines.
+📝 Queue jobs, dispatch to workers, collect results.
+
+20. Microservice Backend with DB + Auth + API
+
+🎯 Complete backend skeleton.
+🛠 axum, PostgreSQL, sqlx, JWT.
+⭐ Advanced
+📚 Full backend app in Rust.
+➕ Related: SaaS boilerplate.
+📝 CRUD + auth, DB storage, secure API endpoints.
