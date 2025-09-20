@@ -1,49 +1,31 @@
-🚀 Rust Project Roadmap (20 Steps to Client-Ready Portfolio)
-📂 Stage 1: CLI Foundations (Projects 1–5)
-
-
-
-
-
-5. JSON Pretty-Printer CLI
-
-🎯 Take JSON input, pretty-print.
-🛠 serde_json, formatting.
-⭐ Beginner
-📚 JSON parsing/serialization.
-➕ Related: CSV converter.
-📝 Parse JSON, pretty-print formatted output.
-
 ⚙️ Stage 2: Practical Utilities (Projects 6–10)
 
-Goal: Demonstrate “useful” tools, not just clones.
+fn load_files_recursive(path: &Path, files: &mut Vec<String>) {
+    if path.is_dir() {
+        for entry in fs::read_dir(path).unwrap() {
+            let entry = entry.unwrap();
+            let path = entry.path();
+            if path.is_file() {
+                files.push(path.to_str().unwrap().to_string());
+            } else if path.is_dir() {
+                load_files_recursive(&path, files); // recursive call
+            }
+        }
+    }
+}
 
-6. Log Parser + CLI Report
+File searcher: look for filenames that match a pattern (like *.txt, config.json, or passwords.db).
 
-🎯 Parse server logs → error counts, status codes.
-🛠 File I/O, regex, stats.
-⭐ Intermediate
-📚 Log parsing, structured output.
-➕ Related: dashboard exporter.
-📝 Parse logs, extract info, count + print table.
+Content searcher (like grep): once you have the list of files, open each and search for a keyword inside.
 
-7. CSV Cleaner / Validator
+File indexer: build a database of all files, their sizes, and modification times, so you can query it quickly later.
 
-🎯 Fix messy CSV (missing fields, bad dates).
-🛠 csv crate, error handling.
-⭐ Intermediate
-📚 Data cleaning + validation.
-➕ Related: Excel processor.
-📝 Load CSV, validate rows, export clean CSV.
+Duplicate finder: hash file contents and detect duplicates.
 
-8. File Change Notifier + Backup
+Media library scanner: collect MP3s, images, videos, etc.
 
-🎯 Watch directory + auto backup changes.
-🛠 notify, file ops.
-⭐ Intermediate
-📚 File watching, event-driven code.
-➕ Related: sync tools.
-📝 Watch directory, trigger backup on change.
+
+
 
 9. Text Searcher with Index
 

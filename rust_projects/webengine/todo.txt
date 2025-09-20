@@ -1,0 +1,28 @@
+
+2️⃣ File Metadata, Stop Words, and Sorting
+
+File Metadata: Store extra information in your SearchResult struct, such as file size, last modified date, and full file path.
+
+Stop Words: Maintain a list of common words like ["the", "and", "a", "of"] and ignore them when counting keyword matches.
+
+Sort by Relevance: Rank results using match_count or a weighted score so the most relevant files appear at the top.
+
+3️⃣ HTML Parsing
+
+Initially, just strip HTML tags so that only visible text is searched.
+
+Optional enhancements:
+
+Ignore <script> and <style> blocks.
+
+Extract headings (<h1>, <h2>) for snippets.
+
+Optionally extract links and images for richer results.
+
+4️⃣ Search History
+
+Keep track of previous searches.
+
+Can be stored in a database or a file for future reference.
+
+Useful for showing past searches or providing search suggestions.
